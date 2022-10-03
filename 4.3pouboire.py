@@ -23,7 +23,7 @@ while True:
         quit()
 
 if prix_facture <= 10:
-    prix_pourboire = prix_facture + 1.50
+    prix_pourboire = 1.50
 
 elif prix_facture < 100:
     prix_pourboire = prix_facture * 0.15
@@ -40,6 +40,5 @@ if 200 > prix_facture > 0:
 
 if prix_facture >= 200:
     print("La valeur du pourboire est de 0$ car celui-ci est inclu.")
-
-if prix_facture < 0:
+elif prix_facture < 0:
     print("Impossible, la facture ne peut pas être négative.")
