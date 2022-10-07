@@ -14,13 +14,13 @@ prix_facture: float  # prix de la facture demandé en input
 # LOGIQUE
 while True:
     try:
-        # PMC : j'ai enlevé le print()
+        # PMC : j'ai enlevé le print() - A.D
         prix_facture = float(input("Quel est le montant de la facture:"))
         if prix_facture < math.inf:
             break
     except ValueError:
         print("Pas de lettres dans le montant!")
-        # PMC : pas besoin de quitter, juste à recommencer
+        # PMC : pas besoin de quitter, juste à recommencer - A.D
 
 if prix_facture <= 10:
     prix_pourboire = 1.50
